@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glam by Nei - Tutorial & Review Makeup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <h1 class="main-title">Glam by Nei</h1>
+
+    <nav>
+      <button onclick="showSection('home')">Beranda</button>
+      <button onclick="showSection('tutorial')">Tutorial Makeup</button>
+      <button onclick="showSection('review')">Review Produk</button>
+      <button onclick="showSection('contact')">Kontak</button>
+    </nav>
+
+    <!-- SECTION BERANDA -->
+    <section id="home" class="section active">
+      <h2>💖 Welcome to Glam by Nei 💖</h2>
+      <p>Tempat nongkrongnya para cewek-cewek kece yang pengen jago makeup tanpa ribet!</p> 
+      <p>Makeup itu harusnya fun, bukan bikin pusing, kan?</p>
+      <h3>✨ Mau belajar makeup dari nol? Bisa banget!</h3>
+      <p>Dari foundation biar gak cracky, sampai eyeliner biar nggak miring—semuanya kita bahas pelan-pelan!</p>
+      <h3>💄 Review produk? Asli no tipu-tipu.</h3>
+      <p>Kita udah coba produknya, jadi kamu tinggal dengerin pengalaman kita.</p>
+      <h3>🎨 Gaya bebas, warna bebas, ekspresi bebas.</h3>
+      <p>Makeup itu bukan soal berubah, tapi soal nunjukin siapa kamu sebenarnya.</p>
+      <h3>Let’s get glowing, bestie! ✨</h3>
+      <p>#GakHarusJagoYangPentingGlow</p>
+    </section>
+
+    <!-- SECTION TUTORIAL -->
+    <section id="tutorial" class="section">
+      <h2>Tutorial Makeup</h2>
+
+      <!-- Tutorial Natural -->
+      <div class="card horizontal">
+        <img src="tutorial1.jpg" alt="Tutorial Natural" />
+        <div class="card-text">
+          <h3>🌼 Makeup Natural untuk Sehari-hari</h3>
+          <p>Tampil cantik gak harus ribet! Cocok untuk kuliah, kerja, atau hangout bareng teman.</p>
+          <button onclick="toggleTutorial('tutorialNatural', this)">Lihat Tutorial</button>
+          <div id="tutorialNatural" class="tutorial-content" style="display: none;">
+            <h4>1. Prep Your Skin (Skincare Dulu Ya!)</h4>
+            <ul>
+              <li>💧 Bersihin wajah pakai facial wash</li>
+              <li>💦 Toner dan moisturizer</li>
+              <li>🧴 Sunscreen SPF minimal 30</li>
+            </ul>
+            <h4>2. Base Makeup  (Yang Ringan Aja)</h4>
+            <ul>
+              <li>Gunkan Tinted Sunscreen atau Cushion yang Medium Coverage</li>
+              <li>Tutupi Bekas jerawat pakai concealer</li>
+              <li>Pilih base sesuai undertone biar gak keabu-abuan.</li>
+            </ul>
+            <h4>3. Alis (Natural Tapi Rapi) </h4>
+            <ul>
+              <li>Sisir alis pakai spoolie</li>
+              <li>Isi bagian kosong dengan pensil alis?brow powder</li>
+              <li>Natural look: Hindari bentuk terlalu tajam ya!</li>
+            </ul>
+            <h4>4. Mata (Soft & Fresh)</h4>
+            <ul>
+              <li>Pakai eyeshadow nude, peach, atau pink muda</li>
+              <li>Tambahkan shimmer di tengah kelopak (opsional) </li>
+              <li>Jepit bulu mata dan pakai maskara tipis</li>
+              <li>Tambahkan eyeliner tipis kalau mau ekstra</li>
+            </ul>
+            <h4>5. Pipi (Sehat & Glowing)</h4>
+            <ul>
+              <li>Gunakan blush on warna peach/pink</li>
+              <li>Tap ringan di pipi dan di hidung untuk efek sun-kissed</li>
+            </ul>
+              <h4>6. Highlighter (Optional)</h4>
+              <ul>
+                <li>Aplikasikan di tulang pipi, hidung, dan cupid's bow</li>
+              </ul>
+              <h4>7. Lips</h4>
+              <ul>
+                <li>Pakai lip tint atau lip glos sheer</li>
+                <li>Kombinasikan lip balm + lipstick nude juga boleh</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <!-- Tutorial Bold -->
+      <div class="card horizontal">
+        <img src="tutorial2.jpg" alt="Tutorial Bold" />
+        <div class="card-text">
+          <h3>🔥 Makeup Bold untuk Graduation / Pesta</h3>
+          <p>Acara penting butuh tampilan yang standout! Makeup bold hadir dengan kombinasi eyeshadow intens, bulu mata dramatis, dan bibir yang berani. Cocok banget buat kamu yang ingin tampil stunning saat wisuda, prom night, atau event spesial lainnya. Waktunya kamu bersinar di panggung hidupmu! 🌟🎓</p>
+          <button onclick="toggleTutorial('tutorialBold', this)">Lihat Tutorial</button>
+          <div id="tutorialBold" class="tutorial-content" style="display: none;">
+            <h4>1. Complexion Flawless</h4>
+            <ul>
+              <li>lembapkan wajah dengan moisturizer dan gunakan primer</li>
+              <li>Concealer di bawah mata & titik highlighter wajah</li>
+              <li>Set makeup dengan loose powder (baking area T-zone)</li>
+              <li>Tambahkan bronxer untuk shading wajah</li>
+              <li>Pro tip: Teknik contour penting untuk tampilan di kamera</li>
+            </ul>
+            <h4>2. Alis Tajam Tapi Rapi</h4>
+            <ul>
+              <li>Bentuk alis dengan pensil atau pomade</li>
+              <li>Isi bagian kosong dengan brow powder</li>
+              <li>Bersihkan tepi alis dengan concealer</li>
+              <li>Gunakan brow gel agar alis tahan lama</li>
+            </ul>
+            <h4>3. Mata Dramatis</h4>
+            <ul>
+              <li>Gunakan eyeshadow gelap (coklat, hitam, plum, burgundy)</li>
+              <li>Tambahkan shimmer/glitter ditengah kelopak</li>
+              <li>Buat eyeliner winged yang tajam</li>
+              <li> Pasang bulu mata palsu + maskara untuk efek dramatis</li>
+            </ul>
+            <h4>4. Blush, Bronzer, Highlighter</h4>
+            <ul>
+              <li> Blush warna mauve atau rose di pipi dan sedikit di hidung</li>
+              <li>Bronzer di rahang, tulang, pipi, dan dahi</li>
+              <li>Highlighter di tulag pipi, batang hidung, dang cupid's bow </li>
+            </ul>
+            <h4>5. Bibir</h4>
+            <ul>
+              <li>Gunakan lip liner untuk membentuk bibir</li>
+              <li>Pilih warna bold seperti merah, wine, plum, atau nude gelap</li>
+              <li>Pakai lipstik matte atau glossy sesuai referensi</li>
+            </ul>
+            <h4>6. Set & Final Touch</h4>
+            <ul>
+              <li>Semprot Setting spray agar makeup tahan lama</li>
+              <li>Touch-up terakhir sebelum acar dimulai</li>
+            </ul>
+            <h4>Ready to slay your graduation day! 🎓💋</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION REVIEW -->
+    <section id="review" class="section">
+  <h2>Review Produk Makeup</h2>
+  <div class="review-container">
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="primer.jpg" alt="Primer" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>Maybelline Fit Me Primer💧</h3>
+        <p>Primer ringan yang bantu kontrol minyak, samarkan pori, dan bikin makeup tahan lama & lebih flawless. Cocok untuk daily use!✨</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="foundation.jpg" alt="Foundation XYZ" style="width: 150px; height: 200px; object-fit: contain; border-radius: 10px;" />
+
+      <div>
+        <h3>Skintific Cover All Foundation💎</h3>
+        <p>Foundation ringan dengan full coverage yang tahan lama & nyaman dipakai seharian. Diperkaya skincare ingredients seperti hyaluronic acid & niacinamide untuk kulit tetap lembap dan sehat. Hasil akhir flawless, nggak cracky! 💖✨</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="cushion.jpg" alt="Cushion Somethinc" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>Somethinc Cushion SPF 35 PA++++🌤️</h3>
+        <p>Cushion ringan dengan hasil semi-matte natural ✨ Tahan lama, breathable, dan nggak bikin berat di kulit 💨💖
+Dengan SPF 35 PA++++ & kandungan skincare, cocok untuk daily look yang flawless & sehat seharian! 🌤️💫</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="pallete.jpg" alt="Face Pallete" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>PinkFlash Face Palette🌸</h3>
+        <p>Palette multifungsi all-in-one yang praktis untuk eyeshadow, blush, highlighter, dan contour dalam satu kemasan. Dengan tekstur powder yang lembut dan mudah dibaur, palette ini cocok banget untuk kamu yang suka tampilan natural dan fresh setiap hari 🌸.</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="concealer.jpg" alt="Concealer" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>Cover Perfect Serum Concealer Skintific</h3>
+        <p>Concealer ringan dengan coverage tinggi yang menutupi noda dan dark circle secara sempurna. Formula creamy-nya mudah dibaur, tahan lama, dan dilengkapi skincare untuk kulit tetap sehat 💖👌. Cocok untuk daily use!</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="alis.jpg" alt="Alis Implora" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>implora Eyebrow 2 in 1</h3>
+        <p>Pensil alis praktis dengan dua fungsi: ujung pensil untuk menggambar alis dan spoolie brush untuk merapikan. Tekstur creamy-nya mudah dibaur, cocok untuk pemula maupun profesional. Tersedia dalam beberapa warna seperti hitam, coklat, dan dark brown. Dilengkapi dengan serutan di tutupnya, memudahkan saat digunakan kapan saja. Hasil akhir natural dan tahan lama!
+</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="eyeliner.jpg" alt="Eyeliner" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3> BNB barenbliss Black Eclipse Eyeliner </h3>
+        <p>Eyeliner cair dengan ujung kuas presisi yang memudahkan aplikasi garis halus hingga bold. Formulanya tahan lama, waterproof, dan smudge-proof, cocok untuk aktivitas seharian. Diperkaya dengan ekstrak beech bud dan zinc PCA untuk menjaga kelembapan kelopak mata. Hasil akhir hitam pekat yang instan dan tahan lama!</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="mascara.jpg" alt="Mascara somethinc" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>SOMETHINC Hangover Voluminous Fiber Lash Smudgeproof Mascara</h3>
+        <p>Mascara dengan formula ringan yang memberikan efek lash lift instan dan volume dramatis tanpa menggumpal. Dilengkapi teknologi Volume Lock & Slick Curl untuk menjaga bulu mata tetap lentik sepanjang hari. Tahan air, keringat, dan tidak mudah luntur. Cocok untuk tampilan natural maupun glamor!</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="bulumata.jpg" alt="bulu mata" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>MLEN DIARY Bulu Mata Gaya Manga</h3>
+        <p>Bulu mata palsu untuk tampilan mata yang lebih lentik, tebal, dan dramatis. Ringan, nyaman dipakai, dan mudah diaplikasikan. Cocok untuk riasan natural maupun bold look! 💖👑</p>
+      </div>
+    </div>
+
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="loosepowder.jpg" alt="loose powder" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>SOMETHINC Hooman Under Control HD Blur Loose Powder</h3>
+        <p>Bedak tabur ringan dengan partikel halus yang bantu kontrol minyak, samarkan pori, dan kasih efek blur di wajah. Tahan hingga 16 jam dan cocok untuk semua jenis kulit! 💖🫧</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="lipvinyl.jpg" alt="lipmatte maybelline" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>MAYBELLINE Superstay Vinyl Ink💄</h3>
+        <p>Lipstik cair dengan hasil akhir glossy yang tahan hingga 16 jam. Formulanya smudge-proof dan transfer-proof, memberikan warna intens yang nyaman dipakai seharian. Tersedia dalam berbagai shade untuk tampilan bold dan berkilau</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="liptint.jpg" alt="liptint" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>Emina Glossy Stain💄</h3>
+        <p>Lip tint bertekstur gel dengan hasil akhir glossy yang cantik tanpa membuat bibir terasa berminyak. Formulanya ringan dan nyaman digunakan sehari-hari, serta mengandung moisturizing actives untuk menjaga bibir tetap lembap.</p>
+      </div>
+    </div>
+
+    <div class="card horizontal" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+      <img src="settingspray.jpg" alt="setting spray" style="width: 150px; height: 200px; object-fit: cover; border-radius: 10px;" />
+      <div>
+        <h3>Studio Tropik Dream Setter Make Up Setting Spray💦</h3>
+        <p>Setting spray lokal dengan banyak varian sesuai jenis kulit: Original, Glowy, & Satin. Bantu kunci makeup hingga 16 jam, ringan & bebas alkohol. 💖</p>
+      </div>
+    </div>
+
+
+    
+
+    </section>
+
+    <!-- SECTION KONTAK -->
+    <section id="contact" class="section">
+      <h2>Kontak Kami</h2>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Nama Kamu" required />
+        <input type="email" id="email" name="email" placeholder="Email Kamu" required />
+        <input type="tel" id="phone" name="phone" placeholder="No. Telp Kamu" required />
+        <textarea id="message" name="message" placeholder="Tulis Pesan Kamu" rows="5" required></textarea><br />
+        <button type="submit">Kirim</button>
+      </form>
+
+      <div id="submittedData" class="submitted-data" style="display:none; margin-top:20px;">
+        <h3>Data yang Kamu Kirim:</h3>
+        <p><strong>Nama:</strong> <span id="dispName"></span></p>
+        <p><strong>Email:</strong> <span id="dispEmail"></span></p>
+        <p><strong>No. Telp:</strong> <span id="dispPhone"></span></p>
+        <p><strong>Pesan:</strong> <span id="dispMessage"></span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleTutorial(id, btn) {
+      const content = document.getElementById(id);
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        btn.textContent = "Sembunyikan Tutorial";
+      } else {
+        content.style.display = "none";
+        btn.textContent = "Lihat Tutorial";
+      }
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("submittedData").style.display = "block";
+      document.getElementById("dispName").textContent = document.getElementById("name").value;
+      document.getElementById("dispEmail").textContent = document.getElementById("email").value;
+      document.getElementById("dispPhone").textContent = document.getElementById("phone").value;
+      document.getElementById("dispMessage").textContent = document.getElementById("message").value;
+      this.reset();
+    });
+  </script>
+</body>
+</html>

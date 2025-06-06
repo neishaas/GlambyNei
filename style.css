@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Montserrat:wght@400;700&display=swap");
+
+body {
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #f8e7f0; /* pink pastel fallback */
+  font-family: "Montserrat", "Poppins", sans-serif;
+  color: #6b4c56; /* pinkish brown text */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ed6e85;
+  text-align: center;
+  margin: 40px 0 20px;
+  text-shadow: 2px 2px 8px rgba(237, 110, 133, 0.5);
+  user-select: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background: #fde9f2;
+  padding: 15px 10px;
+  box-shadow: inset 0 -2px 4px rgba(255, 182, 193, 0.3);
+  border-radius: 25px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+nav button {
+  background: #f7a8b8;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 3px 8px rgba(247, 168, 184, 0.6);
+  font-size: 1rem;
+}
+
+nav button:hover {
+  background: #ed6e85;
+  box-shadow: 0 5px 12px rgba(237, 110, 133, 0.8);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  background: rgba(255, 240, 245, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(247, 168, 184, 0.3);
+  color: #6b4c56;
+}
+
+.section {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.section.active {
+  display: block;
+}
+
+.card {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fde9f2;
+  box-shadow: 0 3px 10px rgba(247, 168, 184, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(237, 110, 133, 0.5);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #b35a6a;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 4px 10px rgba(237, 110, 133, 0.3);
+  display: block;
+}
+
+.card.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.card.horizontal img {
+  flex-shrink: 0;
+  width: 240px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(237, 110, 133, 0.3);
+}
+
+.card-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.card-text h3 {
+  color: #d86f95;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card-text button {
+  margin-top: 10px;
+  background: #f7a8b8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.card-text button:hover {
+  background: #ed6e85;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 15px;
+  border-radius: 12px;
+  border: 2px solid #f7a8b8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  resize: vertical;
+  background: #fff0f4;
+  color: #6b4c56;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ed6e85;
+  outline: none;
+}
+
+form button {
+  background: #f7a8b8;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(247, 168, 184, 0.6);
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #ed6e85;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ✅ MEDIA QUERY - RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+    margin: 30px 0 20px;
+  }
+
+  .card.horizontal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card.horizontal img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-text {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .card-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-text p {
+    font-size: 0.95rem;
+  }
+
+  .card-text button {
+    font-size: 1rem;
+  }
+
+  .review-container {
+    padding: 0 10px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 1rem;
+  }
+}
